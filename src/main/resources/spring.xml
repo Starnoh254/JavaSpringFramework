@@ -4,7 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.starnoh.Alien" scope="prototype">
+<!--    <bean id="alien" class="org.starnoh.Alien" scope="prototype">-->
+
+<!--    </bean>-->
+
+    <bean id="alien" class="org.starnoh.Alien">
+        <property name="age" value="22" />
+        <property name="lap" ref="lap" />
 
     </bean>
 
