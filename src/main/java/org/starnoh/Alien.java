@@ -5,7 +5,9 @@ public class Alien {
     private int age;
     private Laptop lap;
 
-    public Alien() {
+    public Alien(int age , Laptop lap) {
+        this.age = age;
+        this.lap = lap;
         System.out.println("Object created!!!!");
     }
     public void code(){

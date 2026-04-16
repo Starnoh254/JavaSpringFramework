@@ -9,8 +9,12 @@
 <!--    </bean>-->
 
     <bean id="alien" class="org.starnoh.Alien">
-        <property name="age" value="22" />
-        <property name="lap" ref="lap" />
+
+        <constructor-arg name="age" value="25"/>
+        <constructor-arg name="lap" ref="lap" />
+
+<!--        <property name="age" value="22" />-->
+<!--        <property name="lap" ref="lap" />-->
 
     </bean>
 
